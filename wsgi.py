@@ -4,7 +4,7 @@ from flask import Flask
 
 logname = "/mnt/podi.log"
 file = open(logname, "a")
-file.write(str(datetime.datetime.now()) + " \t" + socket.gethostname() + "\n")
+file.write(str(datetime.datetime.now()) + " \t/ " + socket.gethostname() + "\n")
 file.close()
 
 application = Flask(__name__)
